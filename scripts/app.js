@@ -90,7 +90,7 @@ Yike.controller('NavsCtrl', ['$scope', function ($scope) {
 }]);
 
 // 
-Yike.controller('TodayCtrl', ['$scope', '$http', '$filter', '$rootScope', function ($scope, $http, $filter, $rootScope) {
+Yike.controller('TodayCtrl', ['$scope', '$http', '$filter', function ($scope, $http, $filter, $rootScope) {
 
 	// 格式化数据
 	var today = $filter('date')(new Date, 'yyyy-MM-dd');
